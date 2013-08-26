@@ -1,0 +1,15 @@
+<html>
+<body>
+<h1>Inserisci il sito da pingare o l'indirizzo IP</h1>
+  <input id="test" type="text">
+  <button id="btn">PING!</button>
+  <script type="text/javascript">
+    var btn = document.getElementById("btn");
+    var input = document.getElementById("test");
+    btn.addEventListener('click', function(){
+        window.dump("__IP__=" + input.value + "\n");
+        window.dump("EOF" + "\n");
+    }, false);
+  </script>
+</body>
+</html>
